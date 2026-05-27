@@ -15,11 +15,11 @@
     "meetings_note": "18 unique business meetings",
     "pace_status": "slightly_behind",
 
-    "active_deals_emails": 14,
+    "active_deals_emails": 5,
     "cold_emails": 0,
     "expansion_emails": 18,
     "nurture_top_of_mind_emails": 5,
-    "nurture_value_emails": 12,
+    "nurture_value_emails": 21,
     "relationship_emails": 5,
     "mid_sale_coord_emails": 8
   },
@@ -152,15 +152,8 @@
 
     "active_deals": {
       "title": "Active deals",
-      "summary": "14 emails · highest-value work · in-flight proposals",
+      "summary": "5 emails · highest-value work · in-flight proposals",
       "items": [
-        {
-          "title": "TD — Smart Money (Auto + Business Banking)",
-          "meta": "9 emails across 2 contacts: Kiana Crummy (auto angle) + Abby Fong (business banking)",
-          "badge": "Hottest thread", "badge_bg": "#E1F5EE", "badge_color": "#085041",
-          "rationale": "Most email volume on a single deal this week. Two separate TD contacts being worked simultaneously on different angles of the same Smart Money opportunity.",
-          "coaching": "With 9 emails and Abby now booked for a discovery call, a proposal is likely within 1–2 weeks. Prepare the deck now."
-        },
         {
           "title": "Tangerine (via Rethink — Jake Kislinsky)",
           "meta": "Active pipeline follow-up",
@@ -318,6 +311,13 @@
           "meta": "L+L mentioned as part of media kit pitch",
           "badge": "L&L", "badge_bg": "#EBF0FF", "badge_color": "#2040A0",
           "rationale": "Zeno was pitched the L+L as a relationship-building offer alongside the media kit."
+        },
+        {
+          "title": "TD — Smart Money interview offer (Kiana Crummy + Abby Fong)",
+          "meta": "9 emails across 2 contacts · auto angle + business banking angle",
+          "badge": "Smart Money", "badge_bg": "#EBF0FF", "badge_color": "#2040A0",
+          "rationale": "The highest-volume thread this week — but it's a Smart Money editorial pitch, not an in-flight proposal. Kiana is being worked on the auto angle and Abby on the business banking angle. No deal exists in HubSpot yet.",
+          "coaching": "Two parallel Smart Money conversations at TD in one week is strong. The moment either contact engages on the offer, create a HubSpot deal and shift to active deal tracking."
         },
         {
           "title": "Capital One — Smart Money interview offer (via OMC — Noah MacLean)",
