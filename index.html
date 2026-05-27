@@ -46,12 +46,13 @@ body {
 .eyebrow { font-size: 12px; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
 .header-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
 h1 { margin: 0; font-size: 22px; font-weight: 500; }
-h2 { margin: 0; font-size: 18px; font-weight: 500; }
 .section-label { font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; font-weight: 500; }
 .pill { font-size: 12px; padding: 4px 10px; border-radius: var(--radius-md); }
 .pill-on-track    { background: #E1F5EE; color: #085041; }
 .pill-warn        { background: #FAEEDA; color: #854F0B; }
 .pill-behind      { background: #FCEBEB; color: #791F1F; }
+
+/* ── Top 4 pace tiles ─────────────────────────────────────── */
 .tile-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 1.5rem; }
 .tile { cursor: pointer; transition: box-shadow 0.15s, background 0.15s; background: var(--bg-secondary); border-radius: var(--radius-md); padding: 1rem; }
 .tile:hover { background: var(--bg-primary); }
@@ -60,36 +61,91 @@ h2 { margin: 0; font-size: 18px; font-weight: 500; }
 .tile-value { font-size: 24px; font-weight: 500; }
 .tile-value .sub { font-size: 14px; color: var(--text-tertiary); font-weight: 400; }
 .tile-meta { font-size: 12px; color: var(--text-secondary); margin-top: 4px; }
-.tile-meta.warn { color: #854F0B; }
-.tile-meta.good { color: #0F6E56; }
+.tile-meta.warn   { color: #854F0B; }
+.tile-meta.good   { color: #0F6E56; }
 .tile-meta.danger { color: #791F1F; }
-.funnel-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 4px; }
-.funnel-tile { cursor: pointer; border-radius: var(--radius-md); padding: 12px; transition: opacity 0.15s; }
-.funnel-tile:hover { opacity: 0.85; }
-.funnel-tile.active { box-shadow: 0 0 0 2px var(--border-focus); }
-.funnel-tile.cold { background: #EEEDFE; color: #3C3489; }
-.funnel-tile.cold .funnel-label, .funnel-tile.cold .funnel-sub { color: #534AB7; }
-.funnel-tile.nurture { background: #E1F5EE; color: #085041; }
-.funnel-tile.nurture .funnel-label, .funnel-tile.nurture .funnel-sub { color: #0F6E56; }
-.funnel-tile.outcome { background: #FAEEDA; color: #633806; }
-.funnel-tile.outcome .funnel-label, .funnel-tile.outcome .funnel-sub { color: #854F0B; }
-.funnel-label { font-size: 11px; margin-bottom: 4px; }
-.funnel-value { font-size: 20px; font-weight: 500; }
-.funnel-sub { font-size: 11px; margin-top: 2px; }
-.legend { font-size: 11px; color: var(--text-tertiary); margin-bottom: 1.5rem; }
+
+/* ── Activity breakdown (6 tiles, 3×2) ───────────────────── */
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 1.5rem;
+}
+.activity-tile {
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  padding: 12px;
+  transition: opacity 0.15s;
+  position: relative;
+}
+.activity-tile:hover { opacity: 0.82; }
+.activity-tile.active { box-shadow: 0 0 0 2px var(--border-focus); }
+.activity-label { font-size: 11px; margin-bottom: 4px; font-weight: 500; }
+.activity-value { font-size: 22px; font-weight: 500; }
+.activity-sub   { font-size: 11px; margin-top: 2px; }
+
+/* tile colour themes */
+.tile-active-deals   { background: #E1F5EE; }
+.tile-active-deals   .activity-label,
+.tile-active-deals   .activity-value,
+.tile-active-deals   .activity-sub  { color: #085041; }
+
+.tile-cold           { background: #EEEDFE; }
+.tile-cold           .activity-label,
+.tile-cold           .activity-value,
+.tile-cold           .activity-sub  { color: #3C3489; }
+
+.tile-expansion      { background: #E4F2F1; }
+.tile-expansion      .activity-label,
+.tile-expansion      .activity-value,
+.tile-expansion      .activity-sub  { color: #0A5C56; }
+
+.tile-nurture-top    { background: #E6F1FB; }
+.tile-nurture-top    .activity-label,
+.tile-nurture-top    .activity-value,
+.tile-nurture-top    .activity-sub  { color: #0C447C; }
+
+.tile-nurture-value  { background: #EBF0FF; }
+.tile-nurture-value  .activity-label,
+.tile-nurture-value  .activity-value,
+.tile-nurture-value  .activity-sub  { color: #2040A0; }
+
+.tile-relationship   { background: #FEF3E6; }
+.tile-relationship   .activity-label,
+.tile-relationship   .activity-value,
+.tile-relationship   .activity-sub  { color: #8B4A0B; }
+
+/* ── Priority badge on the active-deals tile ─────────────── */
+.priority-tag {
+  position: absolute;
+  top: 8px; right: 8px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  background: #085041;
+  color: #fff;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+/* ── Drill panel ─────────────────────────────────────────── */
 .panel { background: var(--bg-primary); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
 .panel-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; flex-wrap: wrap; gap: 4px; }
-.panel-title { font-size: 14px; font-weight: 500; }
+.panel-title   { font-size: 14px; font-weight: 500; }
 .panel-summary { font-size: 12px; color: var(--text-tertiary); }
 .drill-item { padding: 12px 0; border-bottom: 0.5px solid var(--border); }
 .drill-item:last-child { border-bottom: none; }
 .drill-item-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 4px; }
 .drill-item-title { font-size: 13.5px; font-weight: 500; min-width: 0; }
-.drill-item-meta { font-size: 12px; color: var(--text-tertiary); margin-bottom: 6px; }
+.drill-item-meta  { font-size: 12px; color: var(--text-tertiary); margin-bottom: 6px; }
 .drill-item-rationale { font-size: 13px; color: var(--text-secondary); line-height: 1.55; }
 .badge { font-size: 11px; padding: 2px 8px; border-radius: var(--radius-md); flex-shrink: 0; margin-left: 8px; white-space: nowrap; }
 .coaching-note { margin-top: 10px; padding: 10px 12px; background: var(--bg-info); border-radius: var(--radius-md); font-size: 12.5px; color: var(--text-info); line-height: 1.5; }
 .coaching-note strong { font-weight: 500; }
+
+/* ── Renewal table ───────────────────────────────────────── */
 table { width: 100%; border-collapse: collapse; font-size: 13px; table-layout: fixed; }
 th, td { padding: 8px 0; text-align: left; }
 th { color: var(--text-secondary); font-weight: 400; border-bottom: 0.5px solid var(--border); }
@@ -99,11 +155,16 @@ th { color: var(--text-secondary); font-weight: 400; border-bottom: 0.5px solid 
 .status-warn    { background: #FAEEDA; color: #854F0B; }
 .status-danger  { background: #FCEBEB; color: #791F1F; }
 .status-neutral { background: #F1EFE8; color: #5F5E5A; }
-.hint { font-size: 12px; color: var(--text-tertiary); margin-top: 4px; }
-/* History chart */
-.chart-bars { width: 100%; overflow: hidden; }
+
+/* ── History chart ───────────────────────────────────────── */
+.chart-bars  { width: 100%; overflow: hidden; }
 .chart-empty { font-size: 12px; color: var(--text-tertiary); text-align: center; padding: 1.25rem 0; }
-/* Error state */
+
+/* ── Misc ────────────────────────────────────────────────── */
+.hint { font-size: 12px; color: var(--text-tertiary); margin-top: 4px; }
+.legend { font-size: 11px; color: var(--text-tertiary); margin-top: -1rem; margin-bottom: 1.5rem; }
+
+/* ── Error state ─────────────────────────────────────────── */
 #error-state {
   display: none;
   max-width: 800px;
@@ -115,11 +176,13 @@ th { color: var(--text-secondary); font-weight: 400; border-bottom: 0.5px solid 
   text-align: center;
 }
 #error-state h2 { font-size: 18px; font-weight: 500; margin: 0 0 8px; }
-#error-state p { font-size: 13px; color: var(--text-secondary); margin: 0 0 16px; }
-#error-detail { font-size: 12px; font-family: monospace; color: var(--text-tertiary); background: var(--bg-secondary); border-radius: var(--radius-md); padding: 8px 12px; display: inline-block; }
+#error-state p  { font-size: 13px; color: var(--text-secondary); margin: 0 0 16px; }
+#error-detail   { font-size: 12px; font-family: monospace; color: var(--text-tertiary); background: var(--bg-secondary); border-radius: var(--radius-md); padding: 8px 12px; display: inline-block; }
+
 @media (max-width: 600px) {
   body { padding: 1rem 0.5rem; }
-  .tile-grid, .funnel-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tile-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .activity-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 </style>
 </head>
@@ -127,21 +190,24 @@ th { color: var(--text-secondary); font-weight: 400; border-bottom: 0.5px solid 
 
 <div id="error-state">
   <h2>Dashboard data unavailable</h2>
-  <p>Could not load <code>data/latest.json</code>. If you're running locally, make sure you're serving this via HTTP (e.g. <code>python -m http.server 8000</code>) rather than opening the file directly.</p>
+  <p>Could not load <code>data/latest.json</code>. If running locally, serve via HTTP — e.g. <code>python -m http.server 8000</code> — rather than opening the file directly.</p>
   <div id="error-detail"></div>
 </div>
 
 <div class="dashboard" id="dashboard" style="display:none">
-  <header style="margin-bottom: 1.5rem;">
+
+  <!-- ── Header ───────────────────────────────────────────── -->
+  <header style="margin-bottom:1.5rem">
     <div class="eyebrow" id="eyebrow">Sales momentum · Michelle Anderson</div>
     <div class="header-row">
       <h1 id="week-label">—</h1>
       <span id="pace-pill" class="pill">—</span>
     </div>
     <div class="hint" id="last-updated">—</div>
-    <div class="hint" style="margin-top:2px">Click any number below to see what's behind it →</div>
+    <div class="hint" style="margin-top:2px">Click any tile to see what's behind it →</div>
   </header>
 
+  <!-- ── Pace tiles ────────────────────────────────────────── -->
   <div class="section-label">Pace this week</div>
   <div class="tile-grid">
     <div class="tile" data-drill="proposals">
@@ -166,31 +232,51 @@ th { color: var(--text-secondary); font-weight: 400; border-bottom: 0.5px solid 
     </div>
   </div>
 
-  <div class="section-label">Activity funnel · click any stage</div>
-  <div class="funnel-grid">
-    <div class="funnel-tile cold" data-drill="cold">
-      <div class="funnel-label">Cold outreach</div>
-      <div class="funnel-value" id="f-cold">—</div>
-      <div class="funnel-sub">cold emails</div>
-    </div>
-    <div class="funnel-tile nurture" data-drill="nurture">
-      <div class="funnel-label">Nurture</div>
-      <div class="funnel-value" id="f-nurture">—</div>
-      <div class="funnel-sub">emails to existing</div>
-    </div>
-    <div class="funnel-tile nurture" data-drill="meetings">
-      <div class="funnel-label">Conversations</div>
-      <div class="funnel-value" id="f-conv">—</div>
-      <div class="funnel-sub">meetings booked</div>
-    </div>
-    <div class="funnel-tile outcome" data-drill="proposals">
-      <div class="funnel-label">Outcome</div>
-      <div class="funnel-value" id="f-prop">—</div>
-      <div class="funnel-sub">proposals created</div>
-    </div>
-  </div>
-  <div class="legend">Cold = first 1:1 outreach to a non-customer · Nurture = touches on existing prospects</div>
+  <!-- ── Activity breakdown ─────────────────────────────────── -->
+  <div class="section-label">Email activity this week · click to drill</div>
+  <div class="activity-grid">
 
+    <div class="activity-tile tile-active-deals" data-drill="active_deals">
+      <span class="priority-tag">Top priority</span>
+      <div class="activity-label">Active deals</div>
+      <div class="activity-value" id="a-active-deals">—</div>
+      <div class="activity-sub">in-flight proposals</div>
+    </div>
+
+    <div class="activity-tile tile-cold" data-drill="cold">
+      <div class="activity-label">Cold outreach</div>
+      <div class="activity-value" id="a-cold">—</div>
+      <div class="activity-sub">new accounts</div>
+    </div>
+
+    <div class="activity-tile tile-expansion" data-drill="expansion">
+      <div class="activity-label">Expansion</div>
+      <div class="activity-value" id="a-expansion">—</div>
+      <div class="activity-sub">EL · new teams · new products</div>
+    </div>
+
+    <div class="activity-tile tile-nurture-top" data-drill="nurture_top_of_mind">
+      <div class="activity-label">Nurture: top of mind</div>
+      <div class="activity-value" id="a-nurture-top">—</div>
+      <div class="activity-sub">updates · check-ins</div>
+    </div>
+
+    <div class="activity-tile tile-nurture-value" data-drill="nurture_value">
+      <div class="activity-label">Nurture: value add</div>
+      <div class="activity-value" id="a-nurture-value">—</div>
+      <div class="activity-sub">L&amp;L · Smart Money · opps</div>
+    </div>
+
+    <div class="activity-tile tile-relationship" data-drill="relationship">
+      <div class="activity-label">Relationship building</div>
+      <div class="activity-value" id="a-relationship">—</div>
+      <div class="activity-sub">coffees · dinners · depth</div>
+    </div>
+
+  </div>
+  <div class="legend">Mid-sale coordination (ad copy, campaign wrap-ups) tracked separately as overhead · not shown above</div>
+
+  <!-- ── Drill panel ────────────────────────────────────────── -->
   <div class="panel" id="drill-panel">
     <div class="panel-header">
       <div class="panel-title" id="drill-title">—</div>
@@ -199,6 +285,7 @@ th { color: var(--text-secondary); font-weight: 400; border-bottom: 0.5px solid 
     <div id="drill-content"></div>
   </div>
 
+  <!-- ── Renewal watchlist ──────────────────────────────────── -->
   <div class="panel">
     <div class="panel-header">
       <div class="panel-title">Renewal watchlist</div>
@@ -217,6 +304,7 @@ th { color: var(--text-secondary); font-weight: 400; border-bottom: 0.5px solid 
     </table>
   </div>
 
+  <!-- ── History chart ──────────────────────────────────────── -->
   <div class="panel">
     <div class="panel-header">
       <div class="panel-title">Proposal trend · last 4 weeks</div>
@@ -224,15 +312,16 @@ th { color: var(--text-secondary); font-weight: 400; border-bottom: 0.5px solid 
     </div>
     <div class="chart-bars" id="history-chart"></div>
   </div>
-</div>
+
+</div><!-- /.dashboard -->
 
 <script>
+// ── Data loading ─────────────────────────────────────────────
 async function loadData() {
   const res = await fetch('./data/latest.json');
   if (!res.ok) throw new Error(`HTTP ${res.status} — ${res.statusText}`);
   return res.json();
 }
-
 async function loadHistory() {
   try {
     const res = await fetch('./data/history.json');
@@ -241,11 +330,10 @@ async function loadHistory() {
   } catch { return []; }
 }
 
+// ── Helpers ──────────────────────────────────────────────────
 function fmtCurrency(n) {
-  if (n >= 1000) return '$' + Math.round(n / 1000) + 'K';
-  return '$' + n;
+  return n >= 1000 ? '$' + Math.round(n / 1000) + 'K' : '$' + n;
 }
-
 function fmtDate(iso) {
   try {
     return new Date(iso).toLocaleString('en-CA', {
@@ -254,25 +342,19 @@ function fmtDate(iso) {
     });
   } catch { return iso; }
 }
-
-function paceClass(status) {
-  if (status === 'on_track')       return 'pill-on-track';
-  if (status === 'slightly_behind') return 'pill-warn';
-  return 'pill-behind';
+function paceClass(s) {
+  return s === 'on_track' ? 'pill-on-track' : s === 'slightly_behind' ? 'pill-warn' : 'pill-behind';
+}
+function paceLabel(s) {
+  return s === 'on_track' ? 'On pace' : s === 'slightly_behind' ? 'Slightly behind pace' : 'Behind pace';
 }
 
-function paceLabel(status) {
-  if (status === 'on_track')       return 'On pace';
-  if (status === 'slightly_behind') return 'Slightly behind pace';
-  return 'Behind pace';
-}
-
+// ── Render: topline tiles + activity tiles ───────────────────
 function renderTopline(d) {
   const t = d.topline;
 
   document.getElementById('eyebrow').textContent = `Sales momentum · ${d.rep_name}`;
   document.getElementById('week-label').textContent = `Week of ${d.week_start} – ${d.week_end}`;
-
   if (d.generated_at) {
     document.getElementById('last-updated').textContent = `Last updated: ${fmtDate(d.generated_at)}`;
   }
@@ -281,38 +363,43 @@ function renderTopline(d) {
   pill.textContent = paceLabel(t.pace_status);
   pill.className = 'pill ' + paceClass(t.pace_status);
 
+  // Proposals
   document.getElementById('t-proposals').firstChild.textContent = t.proposals_this_week + ' ';
   document.getElementById('t-proposals-target').textContent = '/ ' + t.proposals_weekly_target;
   const gap = t.proposals_weekly_target - t.proposals_this_week;
-  const proposalsMeta = document.getElementById('t-proposals-meta');
-  if (gap > 0) {
-    proposalsMeta.textContent = `${gap} short of weekly target`;
-    proposalsMeta.className = 'tile-meta warn';
-  } else if (gap === 0) {
-    proposalsMeta.textContent = 'On target';
-    proposalsMeta.className = 'tile-meta good';
-  } else {
-    proposalsMeta.textContent = `${-gap} ahead of target`;
-    proposalsMeta.className = 'tile-meta good';
-  }
+  const pMeta = document.getElementById('t-proposals-meta');
+  if (gap > 0)      { pMeta.textContent = `${gap} short of weekly target`; pMeta.className = 'tile-meta warn'; }
+  else if (gap === 0){ pMeta.textContent = 'On target';                     pMeta.className = 'tile-meta good'; }
+  else               { pMeta.textContent = `${-gap} ahead of target`;       pMeta.className = 'tile-meta good'; }
 
+  // YTD
   document.getElementById('t-ytd').firstChild.textContent = t.proposals_ytd + ' ';
   document.getElementById('t-ytd-target').textContent = '/ ' + t.proposals_ytd_target;
   document.getElementById('t-ytd-meta').textContent = t.ytd_pace_note || '';
 
+  // Pipeline
   document.getElementById('t-pipeline').textContent = fmtCurrency(t.pipeline_dollars);
   document.getElementById('t-pipeline-meta').textContent =
     `${t.pipeline_currency} · across ${t.proposals_this_week} proposal${t.proposals_this_week === 1 ? '' : 's'}`;
 
+  // Meetings
   document.getElementById('t-meetings').textContent = t.meetings_booked;
   document.getElementById('t-meetings-meta').textContent = t.meetings_note || '';
 
-  document.getElementById('f-cold').textContent = t.cold_emails;
-  document.getElementById('f-nurture').textContent = t.nurture_emails;
-  document.getElementById('f-conv').textContent = t.meetings_booked;
-  document.getElementById('f-prop').textContent = t.proposals_this_week;
+  // ── Activity tiles ─────────────────────────────────────────
+  const set = (id, val) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = val ?? '—';
+  };
+  set('a-active-deals',  t.active_deals_emails);
+  set('a-cold',          t.cold_emails);
+  set('a-expansion',     t.expansion_emails);
+  set('a-nurture-top',   t.nurture_top_of_mind_emails);
+  set('a-nurture-value', t.nurture_value_emails);
+  set('a-relationship',  t.relationship_emails);
 }
 
+// ── Render: renewal table ────────────────────────────────────
 function renderRenewals(d) {
   const tbody = document.getElementById('renewal-rows');
   tbody.innerHTML = '';
@@ -330,6 +417,7 @@ function renderRenewals(d) {
   document.getElementById('renewal-summary').textContent = `${fmtCurrency(total)} total at stake`;
 }
 
+// ── Render: drill panel ──────────────────────────────────────
 function renderDrill(key, d) {
   const panel = d.drilldowns && d.drilldowns[key];
   if (!panel) return;
@@ -344,8 +432,7 @@ function renderDrill(key, d) {
       : '';
     return `<div class="drill-item">
       <div class="drill-item-header">
-        <div class="drill-item-title">${item.title}</div>
-        ${badge}
+        <div class="drill-item-title">${item.title}</div>${badge}
       </div>
       <div class="drill-item-meta">${item.meta || ''}</div>
       <div class="drill-item-rationale">${item.rationale || ''}</div>
@@ -357,9 +444,10 @@ function renderDrill(key, d) {
   document.querySelectorAll(`[data-drill="${key}"]`).forEach(t => t.classList.add('active'));
 }
 
+// ── Render: history bar chart ────────────────────────────────
 function renderHistory(history) {
   const container = document.getElementById('history-chart');
-  const summary = document.getElementById('history-summary');
+  const summary   = document.getElementById('history-summary');
 
   if (!history || history.length === 0) {
     container.innerHTML = '<div class="chart-empty">No history yet — populates after week 2 runs.</div>';
@@ -367,55 +455,43 @@ function renderHistory(history) {
     return;
   }
 
-  const weeks = history.slice(-4);
+  const weeks  = history.slice(-4);
   summary.textContent = `${weeks.length} week${weeks.length === 1 ? '' : 's'} of history`;
 
   const target = weeks[0].proposals_weekly_target || 5;
   const maxVal = Math.max(...weeks.map(w => w.proposals_this_week), target) + 1;
 
-  // SVG dimensions
-  const W = 400, H = 110;
-  const padL = 4, padR = 4, padTop = 24, padBottom = 28;
+  const W = 400, H = 110, padL = 4, padR = 4, padTop = 24, padBottom = 28;
   const chartH = H - padTop - padBottom;
-  const colW = (W - padL - padR) / weeks.length;
+  const colW   = (W - padL - padR) / weeks.length;
 
-  const barColors = {
-    on_track:       { fill: '#E1F5EE', stroke: '#0F6E56', text: '#085041' },
-    slightly_behind:{ fill: '#FAEEDA', stroke: '#C07A1A', text: '#854F0B' },
-    behind:         { fill: '#FCEBEB', stroke: '#B94040', text: '#791F1F' },
-    default:        { fill: '#F1EFE8', stroke: '#888780', text: '#5F5E5A' }
+  const colors = {
+    on_track:        { fill: '#E1F5EE', stroke: '#0F6E56', text: '#085041' },
+    slightly_behind: { fill: '#FAEEDA', stroke: '#C07A1A', text: '#854F0B' },
+    behind:          { fill: '#FCEBEB', stroke: '#B94040', text: '#791F1F' },
+    default:         { fill: '#F1EFE8', stroke: '#888780', text: '#5F5E5A' }
   };
 
-  // Target line Y
   const targetY = padTop + chartH - (target / maxVal) * chartH;
-
-  let svg = `<svg viewBox="0 0 ${W} ${H}" style="width:100%;display:block" aria-label="Proposal trend bar chart">`;
-
-  // Target dashed line
-  svg += `<line x1="${padL}" y1="${targetY}" x2="${W - padR}" y2="${targetY}"
+  let svg = `<svg viewBox="0 0 ${W} ${H}" style="width:100%;display:block" aria-label="Proposal trend">`;
+  svg += `<line x1="${padL}" y1="${targetY.toFixed(1)}" x2="${W-padR}" y2="${targetY.toFixed(1)}"
     stroke="#888780" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>`;
-  svg += `<text x="${padL + 2}" y="${targetY - 3}" font-size="9" fill="#888780" opacity="0.9">target ${target}</text>`;
+  svg += `<text x="${padL+2}" y="${(targetY-3).toFixed(1)}" font-size="9" fill="#888780" opacity="0.9">target ${target}</text>`;
 
   weeks.forEach((w, i) => {
-    const c = barColors[w.pace_status] || barColors.default;
+    const c    = colors[w.pace_status] || colors.default;
     const barH = Math.max((w.proposals_this_week / maxVal) * chartH, 2);
-    const x = padL + i * colW;
+    const x    = padL + i * colW;
     const barX = x + colW * 0.2;
     const barW = colW * 0.6;
     const barY = padTop + chartH - barH;
 
-    // Bar
-    svg += `<rect x="${barX.toFixed(1)}" y="${barY.toFixed(1)}"
-      width="${barW.toFixed(1)}" height="${barH.toFixed(1)}"
+    svg += `<rect x="${barX.toFixed(1)}" y="${barY.toFixed(1)}" width="${barW.toFixed(1)}" height="${barH.toFixed(1)}"
       rx="3" fill="${c.fill}" stroke="${c.stroke}" stroke-width="1"/>`;
-
-    // Value label above bar
-    svg += `<text x="${(barX + barW / 2).toFixed(1)}" y="${(barY - 5).toFixed(1)}"
+    svg += `<text x="${(barX+barW/2).toFixed(1)}" y="${(barY-5).toFixed(1)}"
       text-anchor="middle" font-size="11" font-weight="500" fill="${c.text}">${w.proposals_this_week}</text>`;
-
-    // Week label below
-    const label = w.week_label || (w.week_start ? 'Wk of ' + w.week_start.replace(/, \d{4}$/, '') : `Wk ${i + 1}`);
-    svg += `<text x="${(barX + barW / 2).toFixed(1)}" y="${(H - 6).toFixed(1)}"
+    const label = w.week_label || (w.week_start ? 'Wk of ' + w.week_start.replace(/, \d{4}$/, '') : `Wk ${i+1}`);
+    svg += `<text x="${(barX+barW/2).toFixed(1)}" y="${(H-6).toFixed(1)}"
       text-anchor="middle" font-size="9" fill="#888780">${label}</text>`;
   });
 
@@ -423,12 +499,14 @@ function renderHistory(history) {
   container.innerHTML = svg;
 }
 
+// ── Error state ──────────────────────────────────────────────
 function showError(err) {
   document.getElementById('dashboard').style.display = 'none';
   document.getElementById('error-state').style.display = 'block';
   document.getElementById('error-detail').textContent = String(err);
 }
 
+// ── Boot ─────────────────────────────────────────────────────
 (async () => {
   try {
     const [data, history] = await Promise.all([loadData(), loadHistory()]);
@@ -436,7 +514,7 @@ function showError(err) {
     renderTopline(data);
     renderRenewals(data);
     renderHistory(history);
-    renderDrill('proposals', data);
+    renderDrill('active_deals', data);          // default open drill
     document.querySelectorAll('[data-drill]').forEach(tile => {
       tile.addEventListener('click', () => renderDrill(tile.dataset.drill, data));
     });

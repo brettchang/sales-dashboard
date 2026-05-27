@@ -13,15 +13,21 @@
     "pipeline_currency": "CAD",
     "meetings_booked": 18,
     "meetings_note": "18 unique business meetings",
+    "pace_status": "slightly_behind",
+
+    "active_deals_emails": 16,
     "cold_emails": 0,
-    "nurture_emails": 71,
-    "pace_status": "slightly_behind"
+    "expansion_emails": 18,
+    "nurture_top_of_mind_emails": 5,
+    "nurture_value_emails": 10,
+    "relationship_emails": 5,
+    "mid_sale_coord_emails": 8
   },
   "renewal_watchlist": [
-    { "account": "HarvestETFs",      "value": 54000, "month": "Oct", "status": "No activity",       "status_color": "danger" },
-    { "account": "EQ Bank (Consumer)","value": 50000, "month": "Nov", "status": "No activity",       "status_color": "danger" },
-    { "account": "RBC Comms",        "value": 50000, "month": "Jan", "status": "Adjacent activity",  "status_color": "warn"   },
-    { "account": "McMaster",         "value": 50000, "month": "Dec", "status": "No activity",        "status_color": "danger" }
+    { "account": "HarvestETFs",       "value": 54000, "month": "Oct", "status": "No activity",      "status_color": "danger" },
+    { "account": "EQ Bank (Consumer)","value": 50000, "month": "Nov", "status": "No activity",      "status_color": "danger" },
+    { "account": "RBC Comms",         "value": 50000, "month": "Jan", "status": "Adjacent activity","status_color": "warn"   },
+    { "account": "McMaster",          "value": 50000, "month": "Dec", "status": "No activity",      "status_color": "danger" }
   ],
   "drilldowns": {
     "proposals": {
@@ -31,30 +37,30 @@
         {
           "title": "Rogers — Public Affairs",
           "meta": "$30K CAD · created May 11, advanced to Proposal May 22",
-          "badge": "Expansion", "badge_bg": "#E1F5EE", "badge_color": "#085041",
-          "rationale": "Rogers is an existing Tier 1 telco partner. Public Affairs is a new internal team — same logo, new buyer. Janessa on vacation until May 27.",
-          "coaching": "Textbook expansion play. Follow up May 27–28 when Janessa is back."
+          "badge": "Expansion", "badge_bg": "#E4F2F1", "badge_color": "#0A5C56",
+          "rationale": "Rogers is an existing Tier 1 telco partner. Public Affairs is a new internal team — same logo, new buyer.",
+          "coaching": "Janessa on vacation — follow up May 27–28. Classic expansion play: new team, proven account."
         },
         {
           "title": "Felix — Affordable Pricing Campaign",
           "meta": "$20K CAD · created May 21, advanced to Proposal May 22",
-          "badge": "Expansion", "badge_bg": "#E1F5EE", "badge_color": "#085041",
-          "rationale": "Prior Felix campaign just wrapped (3-contact wrap-up thread this week). New budget cycle, fast-moving. Sara Ross booked a discovery call the same week.",
+          "badge": "Expansion", "badge_bg": "#E4F2F1", "badge_color": "#0A5C56",
+          "rationale": "Prior Felix campaign wrapped this week (3-contact thread). New budget cycle opened immediately. Sara Ross also booked a discovery call the same week.",
           "coaching": "Strong post-campaign expansion. Sara is the champion — keep her close."
         },
         {
           "title": "Alan — CWHL Phase 2",
           "meta": "$15K CAD · created and reached Proposal May 22",
-          "badge": "Expansion", "badge_bg": "#E1F5EE", "badge_color": "#085041",
-          "rationale": "Explicit Phase 2 of an existing CWHL partnership — Q&A placements, web articles, and social video. Jacob Batist intro call held this week.",
-          "coaching": "EOW noted original estimate was ~$10K; deal logged at $15K — good upsell signal."
+          "badge": "Expansion", "badge_bg": "#E4F2F1", "badge_color": "#0A5C56",
+          "rationale": "Explicit Phase 2 of an existing CWHL partnership — Q&A placements, web articles, social video. Jacob Batist intro call held this week.",
+          "coaching": "EOW noted ~$10K estimate; deal logged at $15K — good upsell. Phase continuations close faster than net-new."
         },
         {
           "title": "Lums AI",
           "meta": "$4K CAD · created and reached Proposal May 20",
           "badge": "Net new", "badge_bg": "#EEEDFE", "badge_color": "#3C3489",
-          "rationale": "New logo converted from a warm intro (Marion Kesteloot, relationship_intro track). Only true net-new proposal this week.",
-          "coaching": "Budget meeting June 2. Long sales cycle expected — flag if it stalls past June."
+          "rationale": "New logo. Converted from warm intro (Marion Kesteloot). Only true net-new proposal this week.",
+          "coaching": "Budget meeting June 2. Long sales cycle expected — flag if it stalls past June. Smallest deal of the week at 6% of pipeline."
         }
       ]
     },
@@ -65,154 +71,297 @@
         {
           "title": "Where we are",
           "meta": "Through May 25, 2026",
-          "rationale": "23 proposals logged since the plan started (~April 1). At 5/week pace, ~40 would be expected by now — so we're running behind on the cumulative count."
+          "rationale": "23 proposals since the plan started (~April 1). At 5/week, ~40 would be expected by now — cumulative pace is behind."
         },
         {
           "title": "Required weekly rate",
           "meta": "163 proposals remaining · 31 weeks left",
           "rationale": "Need 5.3 proposals/week from here to hit 186 by year-end. This week's 4 is 1.3 below the required rate.",
-          "coaching": "The gap is manageable but compounding. Two strong weeks (6+ proposals each) would put us back on track."
+          "coaching": "The gap is manageable but compounding. Two strong weeks at 6+ proposals would put us back on track."
         },
         {
           "title": "Sensitivity check",
           "meta": "If pace slips to 3/week",
-          "rationale": "We'd land at ~116 by year-end — roughly $380K short of the $1M revenue target.",
-          "coaching": "Cold outreach is the lever. Zero cold emails this week means no new logos entering the funnel."
+          "rationale": "We'd land at ~116 by year-end — roughly $380K short of the $1M target.",
+          "coaching": "Cold outreach is the lever. Zero cold emails this week means no new logos entering the top of the funnel."
         }
       ]
     },
     "pipeline_dollars": {
       "title": "Pipeline $ generated this week",
-      "summary": "$69K CAD · avg $17.3K per proposal (matches H2 plan avg)",
+      "summary": "$69K CAD · avg $17.3K per proposal (on-plan avg)",
       "items": [
         {
           "title": "Rogers — Public Affairs",
           "meta": "$30K · 43% of week's pipeline",
-          "badge": "Expansion", "badge_bg": "#E1F5EE", "badge_color": "#085041",
-          "rationale": "Largest single deal this week. Rogers is a proven buyer — high close-rate expectation."
+          "badge": "Expansion", "badge_bg": "#E4F2F1", "badge_color": "#0A5C56",
+          "rationale": "Largest deal. Rogers is a proven buyer — above-average close-rate expectation."
         },
         {
           "title": "Felix — Affordable Pricing Campaign",
-          "meta": "$20K · 29% of week's pipeline",
-          "badge": "Expansion", "badge_bg": "#E1F5EE", "badge_color": "#085041",
-          "rationale": "Strong follow-on deal size. Prior campaign likely in the $15–20K range."
+          "meta": "$20K · 29%",
+          "badge": "Expansion", "badge_bg": "#E4F2F1", "badge_color": "#0A5C56",
+          "rationale": "Strong follow-on size from a client that just finished a prior campaign."
         },
         {
           "title": "Alan — CWHL Phase 2",
-          "meta": "$15K · 22% of week's pipeline",
-          "badge": "Expansion", "badge_bg": "#E1F5EE", "badge_color": "#085041",
-          "rationale": "Right at the H2 plan average deal size ($17.5K). Well-scoped."
+          "meta": "$15K · 22%",
+          "badge": "Expansion", "badge_bg": "#E4F2F1", "badge_color": "#0A5C56",
+          "rationale": "Right at plan average ($17.5K). Well-scoped."
         },
         {
           "title": "Lums AI",
-          "meta": "$4K · 6% of week's pipeline",
+          "meta": "$4K · 6%",
           "badge": "Net new", "badge_bg": "#EEEDFE", "badge_color": "#3C3489",
-          "rationale": "Well below average deal size for a net-new logo.",
-          "coaching": "Net-new deals are trending small. Tier 1 cold prospecting (banks, insurers, telcos) would bring larger first-deal sizes."
+          "rationale": "Below average for a first-time deal.",
+          "coaching": "Net-new logos are trending small. Tier 1 cold prospecting (banks, insurers, telcos) would anchor larger first deals."
         }
       ]
     },
     "meetings": {
       "title": "Meetings booked this week",
-      "summary": "18 unique business meetings (7 personal/duplicate excluded)",
+      "summary": "18 unique business meetings · 7 personal/duplicate excluded",
       "items": [
         {
-          "title": "7 inbound calendar bookings (30 min with Michelle)",
+          "title": "7 inbound calendar bookings",
           "meta": "Abby Fong (TD), Flora Berwick (RBC), Sara Ross (Felix), Jacob Batist (Alan), Nikita Shivdasani (SP PR), Denise Chow, Catch-up",
           "badge": "Discovery — inbound", "badge_bg": "#E6F1FB", "badge_color": "#0C447C",
-          "rationale": "Self-booked via Michelle's calendar link. Strong inbound conversion — EL and L+L programmes are driving people to book.",
-          "coaching": "Abby Fong (TD) and Flora Berwick (RBC) are particularly high-value — both tied to active deal threads."
+          "rationale": "Self-booked via Michelle's calendar link. Abby Fong (TD) and Flora Berwick (RBC) are high-value — both tied to active deal threads.",
+          "coaching": "Strong inbound conversion. EL and L+L programmes are driving people to self-book — worth tracking which programme drove each booking."
         },
         {
           "title": "3 existing account meetings",
           "meta": "The Peak / RBC (Jun 2), The Peak <> TD (May 26), The Peak <> Bell (May 28)",
-          "badge": "Existing account", "badge_bg": "#E1F5EE", "badge_color": "#085041",
-          "rationale": "RBC and TD are in active pipeline. Bell AI Fabric ($50K) is in Proposal stage — strong renewal/expansion candidate."
+          "badge": "Existing account", "badge_bg": "#E4F2F1", "badge_color": "#0A5C56",
+          "rationale": "Bell AI Fabric ($50K) is in Proposal stage. TD is in active deal threads. RBC has three parallel tracks — Op-Ed, performance review, and agency-side opportunity."
         },
         {
           "title": "5 relationship / intro meetings",
-          "meta": "Laura McEnery (Fintel Connect), Jordan Lavin (Nutrilawn), Alena Atkinson (Burson), Olivia ×2",
-          "badge": "Relationship", "badge_bg": "#E6F1FB", "badge_color": "#0C447C",
-          "rationale": "Warm top-of-funnel. Alena at Burson is especially valuable — Burson is the most-touched prospect in the file (8+ emails, $9K EL deal in Contract Sent)."
+          "meta": "Laura McEnery (Fintel/RBC), Jordan Lavin (Nutrilawn), Alena Atkinson (Burson), Olivia ×2",
+          "badge": "Relationship", "badge_bg": "#FEF3E6", "badge_color": "#8B4A0B",
+          "rationale": "Alena at Burson is especially valuable — Burson is the most-touched prospect in the file with a $9K deal in Contract Sent."
         },
         {
           "title": "2 net-new discovery meetings",
           "meta": "Discovery Feels Human Again, The Peak <> FH",
           "badge": "Net new", "badge_bg": "#EEEDFE", "badge_color": "#3C3489",
           "rationale": "New contacts, no prior thread. Good signs of organic inbound."
-        },
-        {
-          "title": "1 internal coordination",
-          "meta": "FW: Earned Media Monthly + IM Strategy (May 19)",
-          "badge": "Internal", "badge_bg": "#F1EFE8", "badge_color": "#5F5E5A",
-          "rationale": "Internal planning session — not counted in business meeting total."
         }
       ]
     },
+
+    "active_deals": {
+      "title": "Active deals",
+      "summary": "16 emails · highest-value work · in-flight proposals",
+      "items": [
+        {
+          "title": "TD — Smart Money (Auto + Business Banking)",
+          "meta": "9 emails across 2 contacts: Kiana Crummy (auto angle) + Abby Fong (business banking)",
+          "badge": "Hottest thread", "badge_bg": "#E1F5EE", "badge_color": "#085041",
+          "rationale": "Most email volume on a single deal this week. Two separate TD contacts being worked simultaneously on different angles of the same Smart Money opportunity.",
+          "coaching": "With 9 emails and Abby now booked for a discovery call, a proposal is likely within 1–2 weeks. Prepare the deck now."
+        },
+        {
+          "title": "Tangerine (via Rethink — Jake Kislinsky)",
+          "meta": "Active pipeline follow-up",
+          "badge": "Active", "badge_bg": "#E1F5EE", "badge_color": "#085041",
+          "rationale": "Deal has been in Proposal stage since May 1. Jake is the agency contact. EOW noted 'holding out hope' — needs a clear next step."
+        },
+        {
+          "title": "Capital One (via OMC — Noah MacLean)",
+          "meta": "2 emails",
+          "badge": "Active", "badge_bg": "#E1F5EE", "badge_color": "#085041",
+          "rationale": "Agency-mediated deal. Noah at OMC is the buyer contact."
+        },
+        {
+          "title": "B&R RFP (via Media Futures Group — Simay Inan)",
+          "meta": "RFP response thread",
+          "badge": "Active", "badge_bg": "#E1F5EE", "badge_color": "#085041",
+          "rationale": "Formal RFP being worked — media futures group acting as intermediary."
+        },
+        {
+          "title": "Alan — CWHL (Jacob Batist)",
+          "meta": "Deal thread that led to Phase 2 proposal",
+          "badge": "→ Proposal sent", "badge_bg": "#E4F2F1", "badge_color": "#0A5C56",
+          "rationale": "Active deal conversation this week converted to Proposal stage. Good example of active deal work producing a proposal."
+        },
+        {
+          "title": "Fitzrovia / RBC (via BlueSky — Morgan Murphy)",
+          "meta": "Agency-side RBC opportunity",
+          "badge": "Active", "badge_bg": "#E1F5EE", "badge_color": "#085041",
+          "rationale": "Agency contact acting on behalf of an RBC team. Separate from the direct RBC relationship."
+        }
+      ]
+    },
+
     "cold": {
-      "title": "Cold outreach",
-      "summary": "0 cold emails — below the 5/week floor",
+      "title": "Cold outreach — new account opening",
+      "summary": "0 emails · below the 5/week floor · HubSpot check needed",
       "items": [
         {
-          "title": "Zero cold emails this week",
-          "meta": "Floor is 5/week per H2 plan",
+          "title": "Zero new-account emails logged this week",
+          "meta": "All outbound was in existing threads (Re:) or warm follow-ups",
           "badge": "Alert", "badge_bg": "#FCEBEB", "badge_color": "#791F1F",
-          "rationale": "All 71 outbound emails this week were warm: EL nominations, L+L scheduling, active pipeline follow-ups, relationship intros. No first 1:1 outreach to a non-customer contact.",
-          "coaching": "The Emerging Leaders and Lunch & Learn engine is excellent at warming up existing contacts, but it doesn't replace cold prospecting. Net-new logos require cold reach. Recommend blocking 30 min/day for cold outreach from the bank comms list."
+          "rationale": "No first-ever outreach to a brand-new contact was logged in HubSpot this week. All outbound emails were replies to prior conversations. If cold outreach happened via LinkedIn or other channels and wasn't logged in HubSpot, it won't appear here.",
+          "coaching": "Cold outreach is the only way to open genuinely new accounts. The EL and L+L engine is excellent for warming up contacts, but it doesn't replace first-touch prospecting. Recommend blocking 30 min/day for cold reach from the bank comms list."
         },
         {
-          "title": "Priority sectors with 0 touches",
-          "meta": "MBA programs · Insurance comms · ETF providers · Betakit/The Logic advertisers",
+          "title": "Priority sectors with zero touches this week",
+          "meta": "MBA programs · Insurance comms · ETF providers (beyond Harvest) · Betakit/The Logic advertisers",
           "badge": "Gap", "badge_bg": "#FCEBEB", "badge_color": "#791F1F",
-          "rationale": "Four of the named H2 target sectors had zero outreach this week. These are sectors Michelle identified as strategic for net-new growth.",
-          "coaching": "Pick 2 contacts per zero-sector next week and do first outreach. Even 8 cold emails/week across these sectors would open 2–3 new conversations per month."
+          "rationale": "Four of the named H2 target sectors had zero new outreach this week.",
+          "coaching": "Pick 2 contacts per sector next week. Even 8 first-touch emails across these sectors would open 2–3 new conversations per month."
         }
       ]
     },
-    "nurture": {
-      "title": "Nurture activity",
-      "summary": "71 emails · strong volume across 6 sub-buckets",
+
+    "expansion": {
+      "title": "Expansion",
+      "summary": "18 emails · EL programme + new team intros + new products to existing clients",
       "items": [
         {
-          "title": "Pre-sale program prospecting",
-          "meta": "28 emails · pipeline-positive",
-          "badge": "High-leverage", "badge_bg": "#E1F5EE", "badge_color": "#085041",
-          "rationale": "Emerging Leaders nominations (18 emails to Burson, Dialogue, #paid, Google, Council of Canadian Innovators, NarrativeXPR, SP PR) + Lunch & Learn scheduling (8 emails to Bensimon Byrne, Category Comms, Zeno, Agnostic) + Peak Perspectives Op-Ed (2 emails to Habiba/RBC).",
-          "coaching": "Most efficient prospecting motion in the week. EL → L+L → deal is the funnel that's working. Burson is the clearest example."
+          "title": "Emerging Leaders — Burson Global (Alena + Alex)",
+          "meta": "8 emails across 2 contacts · Alena Atkinson + Alex Benac",
+          "badge": "Expansion — EL hook", "badge_bg": "#E4F2F1", "badge_color": "#0A5C56",
+          "rationale": "Burson is The Peak's most-touched account this week. Alena is deep in the EL conversation; Alex is on a separate EL thread. Both are being pitched The Peak's EL sponsorship package. Burson EL deal ($9K) is already in Contract Sent.",
+          "coaching": "With a deal already signed and two contacts active, Burson is the clearest account to bring into a bigger package conversation. Adam Schwartz (Burson) is also on the Lunch + Learn track."
         },
         {
-          "title": "Active pipeline touches",
-          "meta": "16 emails · direct revenue motion",
-          "badge": "Direct revenue", "badge_bg": "#E1F5EE", "badge_color": "#085041",
-          "rationale": "Smart Money / TD Auto (5 emails to Kiana Crummy) + TD Business Banking (4 emails to Abby Fong) = 9 emails on a single deal thread. Also Tangerine via Rethink, Capital One via OMC, CWHL/Alan, Fitzrovia/RBC agency, B&R RFP.",
-          "coaching": "TD Smart Money is the hottest thread — 9 emails in one week across two contacts suggests a proposal is imminent (next 1–2 weeks)."
+          "title": "Emerging Leaders — Dialogue, #paid, NarrativeXPR, SP PR, Council of Canadian Innovators",
+          "meta": "5 contacts · 1 email each · EL hook outreach",
+          "badge": "Expansion — EL hook", "badge_bg": "#E4F2F1", "badge_color": "#0A5C56",
+          "rationale": "These are existing contacts (prior intro calls or warm connections) being pitched the EL sponsorship package. Dialogue ($10K deal in Proposal) and SP PR (Nikita booked a discovery call) are furthest along.",
+          "coaching": "EL outreach to existing warm accounts is the right expansion play. Track which of these convert to a proposal — that's the metric that matters."
         },
         {
-          "title": "Relationship intros",
-          "meta": "11 emails · top-of-funnel",
-          "badge": "Future pipeline", "badge_bg": "#E6F1FB", "badge_color": "#0C447C",
-          "rationale": "Habiba/RBC warm intro (4 emails, progressed to Op-Ed pitch), Jordan Lavin, Laura McEnery (Fintel/RBC WestJet deal), Annette MacIntyre, Google visit follow-up (Iran Karimian)."
+          "title": "Emerging Leaders — Google (Wendy Manton)",
+          "meta": "1 email · Big Tech sector",
+          "badge": "Expansion — EL hook", "badge_bg": "#E4F2F1", "badge_color": "#0A5C56",
+          "rationale": "Google is one of the H2 priority Big Tech targets. Wendy is the contact being worked via EL outreach. She's also now scheduled for next week's meetings.",
+          "coaching": "Google is a high-value target. Continue with the EL hook and book the intro call."
         },
         {
-          "title": "Mid-sale coordination",
-          "meta": "8 emails · fulfillment overhead",
-          "badge": "Healthy ratio", "badge_bg": "#F1EFE8", "badge_color": "#5F5E5A",
-          "rationale": "Felix wrap-up (3 contacts: Sara Ross, Candy Lee, Mike), RBC performance review (Flora Berwick), Scotia HISA sponsored content (Elizabeth Glassen), Weber Shandwick campaign (GT).",
-          "coaching": "11% of nurture volume — healthy. Felix wrap should close out within 1–2 weeks, freeing up capacity."
+          "title": "TD — New team intro (Ada Rampersaud)",
+          "meta": "Dinner invite via Brooke intro · new team, not current deal contact",
+          "badge": "Expansion — new team", "badge_bg": "#E4F2F1", "badge_color": "#0A5C56",
+          "rationale": "Ada is on a TD team that doesn't overlap with the current Smart Money deal. Brooke (existing contact) made the intro. This could open a parallel deal track within TD."
         },
         {
-          "title": "Nurture leads (warm, no deal)",
-          "meta": "5 emails",
-          "badge": "Below threshold", "badge_bg": "#FAEEDA", "badge_color": "#854F0B",
-          "rationale": "Zeno (Dan LeBaron, media kit sent post-meeting), Weber Shandwick (Nancy D'Souza, post-L+L gift card), Deloitte (Ryan, rescheduling), NATIONAL PR (Emma Clarkin, media kit + L+L pitch).",
-          "coaching": "Zeno and NATIONAL PR are conversion candidates. Track to proposal within 4 weeks."
+          "title": "RBC — Peak Perspectives Op-Ed pitch (Habiba Ahmad)",
+          "meta": "4 emails · new product pitch to existing account",
+          "badge": "Expansion — new product", "badge_bg": "#E4F2F1", "badge_color": "#0A5C56",
+          "rationale": "Habiba is an RBC contact introduced via warm referral. The Peak Perspectives Op-Ed is being pitched as a new product line — different from the campaign and performance tracks active with other RBC contacts.",
+          "coaching": "RBC now has 3 parallel tracks running. Confirm there's no channel conflict between Habiba (Op-Ed), Flora (campaign performance), and the BlueSky/Simrin RBC agency track."
+        }
+      ]
+    },
+
+    "nurture_top_of_mind": {
+      "title": "Nurture: top of mind",
+      "summary": "5 emails · past contacts staying warm with updates",
+      "items": [
+        {
+          "title": "Dan LeBaron — Zeno Group",
+          "meta": "Media kit sent post-meeting",
+          "badge": "Top of mind", "badge_bg": "#E6F1FB", "badge_color": "#0C447C",
+          "rationale": "Post-intro call follow-up with a media kit. Dan is a warm contact being kept engaged ahead of a future pitch.",
+          "coaching": "Zeno is a conversion candidate. Set a 2-week check-in to follow up on the media kit."
         },
         {
-          "title": "Major account expansion",
-          "meta": "3 emails · Tier 1 accounts",
-          "badge": "Expansion", "badge_bg": "#E1F5EE", "badge_color": "#085041",
-          "rationale": "TD new team (Ada Rampersaud, drinks invite via Brooke intro), Bell (Sasha Omerasevic, coffee rescheduled), Rogers (Jenessa Crognali, post-call follow-up while on vacation).",
-          "coaching": "Ada at TD is the most interesting — she's a new team introduction that could open a parallel deal track. Follow up after the TD meeting this week."
+          "title": "Ryan Sebastain — Deloitte Comms",
+          "meta": "Meeting rescheduling thread",
+          "badge": "Top of mind", "badge_bg": "#E6F1FB", "badge_color": "#0C447C",
+          "rationale": "Deloitte comms team was referenced in Michelle's calendar as a next-week target. Active rescheduling suggests a warm relationship being maintained."
+        },
+        {
+          "title": "Emma Clarkin — NATIONAL PR",
+          "meta": "Post-intro: media kit + L+L pitch sent",
+          "badge": "Top of mind", "badge_bg": "#E6F1FB", "badge_color": "#0C447C",
+          "rationale": "Emma had an intro call this week and immediately received a media kit. The L+L pitch is a fast-follow — NATIONAL PR is being treated as a high-priority agency target."
+        },
+        {
+          "title": "Nancy D'Souza — Weber Shandwick",
+          "meta": "Post-L+L gift card delivery + congratulatory note",
+          "badge": "Top of mind", "badge_bg": "#E6F1FB", "badge_color": "#0C447C",
+          "rationale": "Weber Shandwick L+L was completed. Nancy is being thanked and kept warm. Referrals or a proposal conversation would be natural next steps.",
+          "coaching": "Weber Shandwick completed their L+L — this is a prime moment to pitch a package. Don't let the warm moment cool off."
+        }
+      ]
+    },
+
+    "nurture_value": {
+      "title": "Nurture: value add",
+      "summary": "10 emails · L&L scheduling + Smart Money editorial opportunities",
+      "items": [
+        {
+          "title": "Lunch + Learn scheduling — Bensimon Byrne (Anya Lomako)",
+          "meta": "3 emails · locking the date",
+          "badge": "L&L", "badge_bg": "#EBF0FF", "badge_color": "#2040A0",
+          "rationale": "Bensimon Byrne L+L is being scheduled for May 28. Anya is coordinating food preferences and RSVP count. This is an agency relationship The Peak is investing in.",
+          "coaching": "L+L is a high-value relationship tool when it leads to a proposal. Track the Bensimon Byrne conversion over the next 4 weeks."
+        },
+        {
+          "title": "Lunch + Learn scheduling — Category Comms (Meagan)",
+          "meta": "3 emails · June 10 confirmed",
+          "badge": "L&L", "badge_bg": "#EBF0FF", "badge_color": "#2040A0",
+          "rationale": "Category Comms reached out about a L+L after an intro call — inbound interest is a strong signal."
+        },
+        {
+          "title": "Lunch + Learn — Agnostic (Sarah / Nwhitten)",
+          "meta": "2 emails · gift card coordination",
+          "badge": "L&L", "badge_bg": "#EBF0FF", "badge_color": "#2040A0",
+          "rationale": "Agnostic L+L is complete. Gift card was arranged. Existing relationship being deepened."
+        },
+        {
+          "title": "Podcast partnership + L+L — Burson (Adam Schwartz)",
+          "meta": "Podcast partnership chat done · L+L booked July 7",
+          "badge": "L&L + podcast", "badge_bg": "#EBF0FF", "badge_color": "#2040A0",
+          "rationale": "Burson is being pitched two value-add products simultaneously: a podcast partnership and a July L+L. Strongest multi-product pitch in the file.",
+          "coaching": "Adam + Burson is the clearest candidate for a bundled package proposal."
+        },
+        {
+          "title": "L+L pitch — Zeno (Dan LeBaron)",
+          "meta": "L+L mentioned as part of media kit pitch",
+          "badge": "L&L", "badge_bg": "#EBF0FF", "badge_color": "#2040A0",
+          "rationale": "Zeno was pitched the L+L as a relationship-building offer alongside the media kit."
+        }
+      ]
+    },
+
+    "relationship": {
+      "title": "Relationship building",
+      "summary": "5 emails · coffees · dinners · deeper ties",
+      "items": [
+        {
+          "title": "Ada Rampersaud — TD (new team)",
+          "meta": "Dinner/drinks invite via Brooke intro",
+          "badge": "New relationship", "badge_bg": "#FEF3E6", "badge_color": "#8B4A0B",
+          "rationale": "Brooke (an existing TD contact) introduced Michelle to Ada, who is on a separate TD team. Michelle followed up with a drinks invite — turning a warm intro into a real relationship.",
+          "coaching": "Ada is the most interesting new relationship this week. A dinner or coffee converts a referral into a real contact who can become a buyer."
+        },
+        {
+          "title": "Sasha Omerasevic — Bell",
+          "meta": "Coffee rescheduled (Bell AI Fabric deal active)",
+          "badge": "Deepening", "badge_bg": "#FEF3E6", "badge_color": "#8B4A0B",
+          "rationale": "Sasha is on the Bell team tied to the $50K AI Fabric deal. A coffee alongside the deal conversation strengthens the personal relationship that closes big deals."
+        },
+        {
+          "title": "Jenessa Crognali — Rogers (Public Affairs)",
+          "meta": "Post-call follow-up while Janessa on vacation",
+          "badge": "Deepening", "badge_bg": "#FEF3E6", "badge_color": "#8B4A0B",
+          "rationale": "Jenessa is the Rogers contact tied to the $30K Public Affairs proposal. Following up while she's on vacation is low-pressure, keeps the deal top of mind."
+        },
+        {
+          "title": "Alena Atkinson — Burson Global",
+          "meta": "Ongoing relationship thread + meeting booked (Jun 16)",
+          "badge": "Deepening", "badge_bg": "#FEF3E6", "badge_color": "#8B4A0B",
+          "rationale": "Alena is Michelle's deepest Burson relationship. A June 16 meeting was booked this week. With $9K already signed and a L+L + podcast pitch active, Alena is the internal champion to cultivate."
+        },
+        {
+          "title": "Iran Karimian — Google",
+          "meta": "Following up on a cancelled client visit",
+          "badge": "New relationship", "badge_bg": "#FEF3E6", "badge_color": "#8B4A0B",
+          "rationale": "Google visit was cancelled; Michelle followed up to reschedule. Persistence on a cancelled touch is good relationship behaviour."
         }
       ]
     }
