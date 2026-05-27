@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "peak-dashboard",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-l", "8000", "/Users/brettchang/Downloads/Peak Dashboard"],
+      "port": 8000
+    }
+  ]
+}

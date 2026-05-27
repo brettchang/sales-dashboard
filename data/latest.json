@@ -1,0 +1,230 @@
+{
+  "rep_name": "Michelle Anderson",
+  "week_start": "May 19, 2026",
+  "week_end": "May 25, 2026",
+  "generated_at": "2026-05-26T20:30:00Z",
+  "topline": {
+    "proposals_this_week": 4,
+    "proposals_weekly_target": 5,
+    "proposals_ytd": 23,
+    "proposals_ytd_target": 186,
+    "ytd_pace_note": "Need 5.3/wk · 31 wks left",
+    "pipeline_dollars": 69000,
+    "pipeline_currency": "CAD",
+    "meetings_booked": 18,
+    "meetings_note": "18 unique business meetings",
+    "cold_emails": 0,
+    "nurture_emails": 71,
+    "pace_status": "slightly_behind"
+  },
+  "renewal_watchlist": [
+    { "account": "HarvestETFs",      "value": 54000, "month": "Oct", "status": "No activity",       "status_color": "danger" },
+    { "account": "EQ Bank (Consumer)","value": 50000, "month": "Nov", "status": "No activity",       "status_color": "danger" },
+    { "account": "RBC Comms",        "value": 50000, "month": "Jan", "status": "Adjacent activity",  "status_color": "warn"   },
+    { "account": "McMaster",         "value": 50000, "month": "Dec", "status": "No activity",        "status_color": "danger" }
+  ],
+  "drilldowns": {
+    "proposals": {
+      "title": "Proposals created this week",
+      "summary": "4 of 5 weekly target · $69K pipeline",
+      "items": [
+        {
+          "title": "Rogers — Public Affairs",
+          "meta": "$30K CAD · created May 11, advanced to Proposal May 22",
+          "badge": "Expansion", "badge_bg": "#E1F5EE", "badge_color": "#085041",
+          "rationale": "Rogers is an existing Tier 1 telco partner. Public Affairs is a new internal team — same logo, new buyer. Janessa on vacation until May 27.",
+          "coaching": "Textbook expansion play. Follow up May 27–28 when Janessa is back."
+        },
+        {
+          "title": "Felix — Affordable Pricing Campaign",
+          "meta": "$20K CAD · created May 21, advanced to Proposal May 22",
+          "badge": "Expansion", "badge_bg": "#E1F5EE", "badge_color": "#085041",
+          "rationale": "Prior Felix campaign just wrapped (3-contact wrap-up thread this week). New budget cycle, fast-moving. Sara Ross booked a discovery call the same week.",
+          "coaching": "Strong post-campaign expansion. Sara is the champion — keep her close."
+        },
+        {
+          "title": "Alan — CWHL Phase 2",
+          "meta": "$15K CAD · created and reached Proposal May 22",
+          "badge": "Expansion", "badge_bg": "#E1F5EE", "badge_color": "#085041",
+          "rationale": "Explicit Phase 2 of an existing CWHL partnership — Q&A placements, web articles, and social video. Jacob Batist intro call held this week.",
+          "coaching": "EOW noted original estimate was ~$10K; deal logged at $15K — good upsell signal."
+        },
+        {
+          "title": "Lums AI",
+          "meta": "$4K CAD · created and reached Proposal May 20",
+          "badge": "Net new", "badge_bg": "#EEEDFE", "badge_color": "#3C3489",
+          "rationale": "New logo converted from a warm intro (Marion Kesteloot, relationship_intro track). Only true net-new proposal this week.",
+          "coaching": "Budget meeting June 2. Long sales cycle expected — flag if it stalls past June."
+        }
+      ]
+    },
+    "ytd": {
+      "title": "Year-to-date pace",
+      "summary": "23 of 186 · 12.4% complete",
+      "items": [
+        {
+          "title": "Where we are",
+          "meta": "Through May 25, 2026",
+          "rationale": "23 proposals logged since the plan started (~April 1). At 5/week pace, ~40 would be expected by now — so we're running behind on the cumulative count."
+        },
+        {
+          "title": "Required weekly rate",
+          "meta": "163 proposals remaining · 31 weeks left",
+          "rationale": "Need 5.3 proposals/week from here to hit 186 by year-end. This week's 4 is 1.3 below the required rate.",
+          "coaching": "The gap is manageable but compounding. Two strong weeks (6+ proposals each) would put us back on track."
+        },
+        {
+          "title": "Sensitivity check",
+          "meta": "If pace slips to 3/week",
+          "rationale": "We'd land at ~116 by year-end — roughly $380K short of the $1M revenue target.",
+          "coaching": "Cold outreach is the lever. Zero cold emails this week means no new logos entering the funnel."
+        }
+      ]
+    },
+    "pipeline_dollars": {
+      "title": "Pipeline $ generated this week",
+      "summary": "$69K CAD · avg $17.3K per proposal (matches H2 plan avg)",
+      "items": [
+        {
+          "title": "Rogers — Public Affairs",
+          "meta": "$30K · 43% of week's pipeline",
+          "badge": "Expansion", "badge_bg": "#E1F5EE", "badge_color": "#085041",
+          "rationale": "Largest single deal this week. Rogers is a proven buyer — high close-rate expectation."
+        },
+        {
+          "title": "Felix — Affordable Pricing Campaign",
+          "meta": "$20K · 29% of week's pipeline",
+          "badge": "Expansion", "badge_bg": "#E1F5EE", "badge_color": "#085041",
+          "rationale": "Strong follow-on deal size. Prior campaign likely in the $15–20K range."
+        },
+        {
+          "title": "Alan — CWHL Phase 2",
+          "meta": "$15K · 22% of week's pipeline",
+          "badge": "Expansion", "badge_bg": "#E1F5EE", "badge_color": "#085041",
+          "rationale": "Right at the H2 plan average deal size ($17.5K). Well-scoped."
+        },
+        {
+          "title": "Lums AI",
+          "meta": "$4K · 6% of week's pipeline",
+          "badge": "Net new", "badge_bg": "#EEEDFE", "badge_color": "#3C3489",
+          "rationale": "Well below average deal size for a net-new logo.",
+          "coaching": "Net-new deals are trending small. Tier 1 cold prospecting (banks, insurers, telcos) would bring larger first-deal sizes."
+        }
+      ]
+    },
+    "meetings": {
+      "title": "Meetings booked this week",
+      "summary": "18 unique business meetings (7 personal/duplicate excluded)",
+      "items": [
+        {
+          "title": "7 inbound calendar bookings (30 min with Michelle)",
+          "meta": "Abby Fong (TD), Flora Berwick (RBC), Sara Ross (Felix), Jacob Batist (Alan), Nikita Shivdasani (SP PR), Denise Chow, Catch-up",
+          "badge": "Discovery — inbound", "badge_bg": "#E6F1FB", "badge_color": "#0C447C",
+          "rationale": "Self-booked via Michelle's calendar link. Strong inbound conversion — EL and L+L programmes are driving people to book.",
+          "coaching": "Abby Fong (TD) and Flora Berwick (RBC) are particularly high-value — both tied to active deal threads."
+        },
+        {
+          "title": "3 existing account meetings",
+          "meta": "The Peak / RBC (Jun 2), The Peak <> TD (May 26), The Peak <> Bell (May 28)",
+          "badge": "Existing account", "badge_bg": "#E1F5EE", "badge_color": "#085041",
+          "rationale": "RBC and TD are in active pipeline. Bell AI Fabric ($50K) is in Proposal stage — strong renewal/expansion candidate."
+        },
+        {
+          "title": "5 relationship / intro meetings",
+          "meta": "Laura McEnery (Fintel Connect), Jordan Lavin (Nutrilawn), Alena Atkinson (Burson), Olivia ×2",
+          "badge": "Relationship", "badge_bg": "#E6F1FB", "badge_color": "#0C447C",
+          "rationale": "Warm top-of-funnel. Alena at Burson is especially valuable — Burson is the most-touched prospect in the file (8+ emails, $9K EL deal in Contract Sent)."
+        },
+        {
+          "title": "2 net-new discovery meetings",
+          "meta": "Discovery Feels Human Again, The Peak <> FH",
+          "badge": "Net new", "badge_bg": "#EEEDFE", "badge_color": "#3C3489",
+          "rationale": "New contacts, no prior thread. Good signs of organic inbound."
+        },
+        {
+          "title": "1 internal coordination",
+          "meta": "FW: Earned Media Monthly + IM Strategy (May 19)",
+          "badge": "Internal", "badge_bg": "#F1EFE8", "badge_color": "#5F5E5A",
+          "rationale": "Internal planning session — not counted in business meeting total."
+        }
+      ]
+    },
+    "cold": {
+      "title": "Cold outreach",
+      "summary": "0 cold emails — below the 5/week floor",
+      "items": [
+        {
+          "title": "Zero cold emails this week",
+          "meta": "Floor is 5/week per H2 plan",
+          "badge": "Alert", "badge_bg": "#FCEBEB", "badge_color": "#791F1F",
+          "rationale": "All 71 outbound emails this week were warm: EL nominations, L+L scheduling, active pipeline follow-ups, relationship intros. No first 1:1 outreach to a non-customer contact.",
+          "coaching": "The Emerging Leaders and Lunch & Learn engine is excellent at warming up existing contacts, but it doesn't replace cold prospecting. Net-new logos require cold reach. Recommend blocking 30 min/day for cold outreach from the bank comms list."
+        },
+        {
+          "title": "Priority sectors with 0 touches",
+          "meta": "MBA programs · Insurance comms · ETF providers · Betakit/The Logic advertisers",
+          "badge": "Gap", "badge_bg": "#FCEBEB", "badge_color": "#791F1F",
+          "rationale": "Four of the named H2 target sectors had zero outreach this week. These are sectors Michelle identified as strategic for net-new growth.",
+          "coaching": "Pick 2 contacts per zero-sector next week and do first outreach. Even 8 cold emails/week across these sectors would open 2–3 new conversations per month."
+        }
+      ]
+    },
+    "nurture": {
+      "title": "Nurture activity",
+      "summary": "71 emails · strong volume across 6 sub-buckets",
+      "items": [
+        {
+          "title": "Pre-sale program prospecting",
+          "meta": "28 emails · pipeline-positive",
+          "badge": "High-leverage", "badge_bg": "#E1F5EE", "badge_color": "#085041",
+          "rationale": "Emerging Leaders nominations (18 emails to Burson, Dialogue, #paid, Google, Council of Canadian Innovators, NarrativeXPR, SP PR) + Lunch & Learn scheduling (8 emails to Bensimon Byrne, Category Comms, Zeno, Agnostic) + Peak Perspectives Op-Ed (2 emails to Habiba/RBC).",
+          "coaching": "Most efficient prospecting motion in the week. EL → L+L → deal is the funnel that's working. Burson is the clearest example."
+        },
+        {
+          "title": "Active pipeline touches",
+          "meta": "16 emails · direct revenue motion",
+          "badge": "Direct revenue", "badge_bg": "#E1F5EE", "badge_color": "#085041",
+          "rationale": "Smart Money / TD Auto (5 emails to Kiana Crummy) + TD Business Banking (4 emails to Abby Fong) = 9 emails on a single deal thread. Also Tangerine via Rethink, Capital One via OMC, CWHL/Alan, Fitzrovia/RBC agency, B&R RFP.",
+          "coaching": "TD Smart Money is the hottest thread — 9 emails in one week across two contacts suggests a proposal is imminent (next 1–2 weeks)."
+        },
+        {
+          "title": "Relationship intros",
+          "meta": "11 emails · top-of-funnel",
+          "badge": "Future pipeline", "badge_bg": "#E6F1FB", "badge_color": "#0C447C",
+          "rationale": "Habiba/RBC warm intro (4 emails, progressed to Op-Ed pitch), Jordan Lavin, Laura McEnery (Fintel/RBC WestJet deal), Annette MacIntyre, Google visit follow-up (Iran Karimian)."
+        },
+        {
+          "title": "Mid-sale coordination",
+          "meta": "8 emails · fulfillment overhead",
+          "badge": "Healthy ratio", "badge_bg": "#F1EFE8", "badge_color": "#5F5E5A",
+          "rationale": "Felix wrap-up (3 contacts: Sara Ross, Candy Lee, Mike), RBC performance review (Flora Berwick), Scotia HISA sponsored content (Elizabeth Glassen), Weber Shandwick campaign (GT).",
+          "coaching": "11% of nurture volume — healthy. Felix wrap should close out within 1–2 weeks, freeing up capacity."
+        },
+        {
+          "title": "Nurture leads (warm, no deal)",
+          "meta": "5 emails",
+          "badge": "Below threshold", "badge_bg": "#FAEEDA", "badge_color": "#854F0B",
+          "rationale": "Zeno (Dan LeBaron, media kit sent post-meeting), Weber Shandwick (Nancy D'Souza, post-L+L gift card), Deloitte (Ryan, rescheduling), NATIONAL PR (Emma Clarkin, media kit + L+L pitch).",
+          "coaching": "Zeno and NATIONAL PR are conversion candidates. Track to proposal within 4 weeks."
+        },
+        {
+          "title": "Major account expansion",
+          "meta": "3 emails · Tier 1 accounts",
+          "badge": "Expansion", "badge_bg": "#E1F5EE", "badge_color": "#085041",
+          "rationale": "TD new team (Ada Rampersaud, drinks invite via Brooke intro), Bell (Sasha Omerasevic, coffee rescheduled), Rogers (Jenessa Crognali, post-call follow-up while on vacation).",
+          "coaching": "Ada at TD is the most interesting — she's a new team introduction that could open a parallel deal track. Follow up after the TD meeting this week."
+        }
+      ]
+    }
+  },
+  "alerts": {
+    "cold_floor_alert": true,
+    "priority_sectors_at_zero": [
+      "MBA programs",
+      "Insurance comms teams",
+      "ETF providers (beyond Harvest)",
+      "Betakit / The Logic advertisers"
+    ],
+    "renewal_neglect": ["HarvestETFs", "EQ Bank (Consumer)", "McMaster"]
+  }
+}
