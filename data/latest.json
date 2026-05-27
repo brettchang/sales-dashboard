@@ -15,11 +15,11 @@
     "meetings_note": "18 unique business meetings",
     "pace_status": "slightly_behind",
 
-    "active_deals_emails": 16,
+    "active_deals_emails": 14,
     "cold_emails": 0,
     "expansion_emails": 18,
     "nurture_top_of_mind_emails": 5,
-    "nurture_value_emails": 10,
+    "nurture_value_emails": 12,
     "relationship_emails": 5,
     "mid_sale_coord_emails": 8
   },
@@ -152,7 +152,7 @@
 
     "active_deals": {
       "title": "Active deals",
-      "summary": "16 emails · highest-value work · in-flight proposals",
+      "summary": "14 emails · highest-value work · in-flight proposals",
       "items": [
         {
           "title": "TD — Smart Money (Auto + Business Banking)",
@@ -168,16 +168,10 @@
           "rationale": "Deal has been in Proposal stage since May 1. Jake is the agency contact. EOW noted 'holding out hope' — needs a clear next step."
         },
         {
-          "title": "Capital One (via OMC — Noah MacLean)",
-          "meta": "2 emails",
-          "badge": "Active", "badge_bg": "#E1F5EE", "badge_color": "#085041",
-          "rationale": "Agency-mediated deal. Noah at OMC is the buyer contact."
-        },
-        {
           "title": "B&R RFP (via Media Futures Group — Simay Inan)",
           "meta": "RFP response thread",
           "badge": "Active", "badge_bg": "#E1F5EE", "badge_color": "#085041",
-          "rationale": "Formal RFP being worked — media futures group acting as intermediary."
+          "rationale": "Formal RFP being worked — Media Futures Group acting as intermediary."
         },
         {
           "title": "Alan — CWHL (Jacob Batist)",
@@ -324,6 +318,13 @@
           "meta": "L+L mentioned as part of media kit pitch",
           "badge": "L&L", "badge_bg": "#EBF0FF", "badge_color": "#2040A0",
           "rationale": "Zeno was pitched the L+L as a relationship-building offer alongside the media kit."
+        },
+        {
+          "title": "Capital One — Smart Money interview offer (via OMC — Noah MacLean)",
+          "meta": "2 emails · no active deal in HubSpot",
+          "badge": "Smart Money", "badge_bg": "#EBF0FF", "badge_color": "#2040A0",
+          "rationale": "Capital One is being nurtured with a Smart Money executive interview offer — a value-add pitch rather than a direct sales conversation. No deal exists in HubSpot yet. This is the right way to open the account: lead with editorial value, convert to a proposal once they engage.",
+          "coaching": "If Capital One engages on the Smart Money offer, that's the trigger to create a deal in HubSpot and move to active deal tracking."
         }
       ]
     },
